@@ -149,4 +149,19 @@ Here, you can inspect schemas, parameters, and use the **"Try it out"** button t
 ---
 
 ## 📸 Screenshots Section
-*(Add visual screenshots of your local browser view showing the Login screen, Register form, User Dashboard, Admin Dashboard showing all tasks, and Swagger Docs panel here.)*
+## Screenshots
+
+### Register Page
+![Register](screenshots/register.png)
+
+### Login Page
+![Login](screenshots/login.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Create Task
+![Create Task](screenshots/create-task.png)
+
+### Swagger Documentation
+![Swagger](screenshots/swagger.png)
