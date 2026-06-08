@@ -119,6 +119,28 @@ npm run dev
 
 ---
 
+## Database Schema
+
+### Users Collection
+| Field      | Type     | Notes                        |
+|------------|----------|------------------------------|
+| _id        | ObjectId | Auto-generated               |
+| name       | String   | Required                     |
+| email      | String   | Unique, required             |
+| password   | String   | bcrypt hashed, hidden by default |
+| role       | String   | enum: ['user', 'admin'], default: 'user' |
+| createdAt  | Date     | Auto timestamp               |
+
+### Tasks Collection
+| Field       | Type     | Notes                            |
+|-------------|----------|----------------------------------|
+| _id         | ObjectId | Auto-generated                   |
+| title       | String   | Required                         |
+| description | String   | Optional                         |
+| status      | String   | enum: ['pending','in-progress','completed'] |
+| createdBy   | ObjectId | Ref → Users collection           |
+| createdAt   | Date     | Auto timestamp                   |
+
 ## 📋 API Endpoints Summary (Prefix: `/api/v1`)
 
 ### Auth Endpoints
